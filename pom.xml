@@ -4,10 +4,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>haiwai</groupId>
-    <artifactId>registry.cn-beijing.aliyuncs.com</artifactId>
+    <groupId>registry.cn-beijing.aliyuncs.com</groupId>
+    <artifactId>ningsq</artifactId>
 
-    <version>2.1</version>
+    <version>1.000</version>
 	<packaging>jar</packaging>
 
 	<name>config</name>
@@ -70,7 +70,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <imageName>${project.artifactId}/${project.groupId}/${project.name}:${project.version}</imageName>
+                    <imageName>${project.groupId}/${project.artifactId}/${project.name}:${project.version}</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
